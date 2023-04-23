@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;420;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #05011f;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #05011f00;
+  border-radius: 0 0 15px 15px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.nav_link:hover {
+  border-bottom: 5px solid #014856;
+}
+nav ul a {
+  text-decoration: none;
+  color: #ffff00;
+  font-size: 18px;
+  padding: 5px 17px;
+  margin: 0 5px;
+}
+.active {
+  border-bottom: 5px solid #0b97b4;
+}
+section {
+  padding-top: 8vh;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* HOME PAGE */
+#home_page {
+  position: relative;
+  padding-top: 0;
+}
+#home_page img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.home_desc {
+  position: absolute;
+  bottom: 10vh;
+  right: 0;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home_desc h1 {
+  font-size: 42px;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #ff01c4;
+}
+.home_desc h1 span:nth-of-type(1) {
+  color: rgb(0, 251, 255);
+  text-shadow: 2px 2px 3px #621800;
+}
+.home_desc h1 span:nth-of-type(2) {
+  color: rgba(157, 0, 255, 0.986);
+  text-shadow: 2px 2px 3px #ffffff;
+}
+.home_desc a {
+  margin-top: 21px;
+  background-color: transparent;
+  box-shadow: 3px 3px 7px #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 26px;
+  font-size: 22px;
+  font-weight: 700;
+}
+/*-- HOME PAGE --*/
+
+/* COMMON PAGES */
+.page_header {
+  margin-top: 0.5%;
+  color: #e1ff00;
+  border-bottom: 5px solid #faff9b;
+  border-radius: 10px;
+  padding: 0 16px;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 2px #1e0000;
+}
+.page_body {
+  height: 80%;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.page_image {
+  height: 100%;
+  width: 49%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page_desc {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 140px;
+}
+.page_desc h2 {
+  font-size: 34px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+  margin-bottom: 42px;
+  color: #52c718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page_desc p {
+  font-weight: 200;
+  font-size: 18px;
+}
+/*--- COMMON PAGES ---*/
+
+/* ABOUT PAGE */
+#about_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*--- ABOUT PAGE ---*/
+
+/* DONATION PAGE */
+#donation_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.donation_desc {
+  padding-left: 10%;
+  align-items: flex-start;
+}
+.donation_desc h2 {
+  border-bottom: none;
+  color: #a8a8a8;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 40px;
+}
+.donation_desc h3 {
+  color: #a8a8a8;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 23px;
+}
+/*--- DONATION PAGE ---*/
+
+/* CONTACT PAGE */
+#contact_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input,
+textarea,
+button {
+  width: 70%;
+  font-size: 21px;
+  border-radius: 5px;
+  padding: 14px;
+  border: none;
+  margin: 10px 0;
+  box-shadow: 0 0 5px #ccc;
+}
+.contact_form {
+  padding: 0 80px;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+button {
+  background-color: #afb100;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+button:hover {
+  cursor: pointer;
+}
+.contact_cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cube_container {
+  position: relative;
+  height: 42vh;
+  width: 42vh;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  animation: rotatecube 20s ease infinite;
+}
+.cube_face {
+  position: absolute;
+  height: 42vh;
+  width: 42vh;
+  background-color: #1e0000;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  padding: 10px;
+  background-color: #2a2a2add;
+  overflow: hidden;
+  border: none;
+}
+.cube_face img {
+  border-radius: 20px;
+}
+.face1 {
+  transform: translateZ(21vh);
+}
+.face2 {
+  transform: translateZ(-21vh) rotateY(180deg);
+}
+.face3 {
+  transform: translateX(-21vh) rotateY(-90deg);
+}
+.face4 {
+  transform: translateX(21vh) rotateY(90deg);
+}
+.face5 {
+  transform: translateY(21vh) rotateX(-90deg);
+}
+.face6 {
+  transform: translateY(-21vh) rotateX(90deg);
+}
+@keyframes rotatecube {
+  0% {
+    transform: rotateY(0);
+  }
+  16.6% {
+    transform: rotateY(45deg);
+  }
+  33.2% {
+    transform: rotateY(90deg);
+  }
+  49.8% {
+    transform: rotateY(135deg);
+  }
+  66.4% {
+    transform: rotateX(-45deg);
+  }
+  83% {
+    transform: rotate3d(0deg, 180deg, 0);
+  }
+  100% {
+    transform: rotateX(45deg);
+  }
+}
+/*--- CONTACT PAGE ---*/
+
+/* FOOTER */
+footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaff04;
+}
+footer h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #212121;
+}
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+.social_links a {
+  text-decoration: none;
+  color: #05011f;
+  font-size: 50px;
+}
+/*--- FOOTER ---*/
